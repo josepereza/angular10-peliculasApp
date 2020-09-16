@@ -1,0 +1,17 @@
+<div class="container text-center">
+    <h2>POPULARES</h2>
+      <div class="card-columns">
+       
+          <div class="card" *ngFor="let peli of peliculas">
+            <img [src]="'https://image.tmdb.org/t/p/w600_and_h900_bestv2'+ peli.poster_path" class="card-img" [alt]="peli.title">
+            <div class="card-body">
+              <h5 class="card-title">{{peli.title}}</h5>
+              <p class="card-text">{{peli.overview}}</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          
+         
+        </div>
+       
+  </div>
